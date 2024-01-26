@@ -1,0 +1,11 @@
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\bin\Debug\net8.0\Games.Task0Refactor.deps.json
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\bin\Debug\net8.0\Games.Task0Refactor.dll
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\bin\Debug\net8.0\Games.Task0Refactor.pdb
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task0Refactor.GeneratedMSBuildEditorConfig.editorconfig
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task0Refactor.AssemblyInfoInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task0Refactor.AssemblyInfo.cs
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task0Refactor.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task0Refactor.dll
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\refint\Games.Task0Refactor.dll
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task0Refactor.pdb
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\ref\Games.Task0Refactor.dll

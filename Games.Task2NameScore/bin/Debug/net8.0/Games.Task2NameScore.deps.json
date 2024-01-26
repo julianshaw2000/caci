@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Games.Task2NameScore/1.0.0": {
+        "runtime": {
+          "Games.Task2NameScore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Games.Task2NameScore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

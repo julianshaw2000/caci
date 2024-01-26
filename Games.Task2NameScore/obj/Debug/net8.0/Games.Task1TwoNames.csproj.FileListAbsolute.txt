@@ -1,0 +1,11 @@
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\bin\Debug\net8.0\Games.Task1TwoNames.deps.json
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\bin\Debug\net8.0\Games.Task1TwoNames.dll
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\bin\Debug\net8.0\Games.Task1TwoNames.pdb
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\obj\Debug\net8.0\Games.Task1TwoNames.GeneratedMSBuildEditorConfig.editorconfig
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\obj\Debug\net8.0\Games.Task1TwoNames.AssemblyInfoInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\obj\Debug\net8.0\Games.Task1TwoNames.AssemblyInfo.cs
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\obj\Debug\net8.0\Games.Task1TwoNames.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\obj\Debug\net8.0\Games.Task1TwoNames.dll
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\obj\Debug\net8.0\refint\Games.Task1TwoNames.dll
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\obj\Debug\net8.0\Games.Task1TwoNames.pdb
+C:\__Jobs\indian\Games.Core\Games.Task2NameScore\obj\Debug\net8.0\ref\Games.Task1TwoNames.dll

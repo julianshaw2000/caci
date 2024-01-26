@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Class1.cs.md" />
+    <None Remove="UnitTest1.cs.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="6.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Games.Core\Games.OriginalCode.csproj" />
+    <ProjectReference Include="..\Games.Task1Refactor\Games.Task1Refactor.csproj" />
+    <ProjectReference Include="..\Games.Task2NameScore\Games.Task2TwoNames.csproj" />
+    <ProjectReference Include="..\Games.Task3WinnerScore\Games.Task3WinnerScore.csproj" />
+    <ProjectReference Include="..\Games.Task4VolleyBall\Games.Task4VolleyBall.csproj" />
+    <ProjectReference Include="..\Games.Task5TennisSquash\Games.Task5TennisSquash.csproj" />
+    <ProjectReference Include="..\Games.Task6API\Games.Task6API.csproj" />
+  </ItemGroup>
+
+</Project>

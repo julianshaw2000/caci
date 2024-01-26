@@ -1,0 +1,14 @@
+C:\__Jobs\indian\Games.Core\Games.Core\bin\Debug\net8.0\Games.Core.exe
+C:\__Jobs\indian\Games.Core\Games.Core\bin\Debug\net8.0\Games.Core.deps.json
+C:\__Jobs\indian\Games.Core\Games.Core\bin\Debug\net8.0\Games.Core.runtimeconfig.json
+C:\__Jobs\indian\Games.Core\Games.Core\bin\Debug\net8.0\Games.Core.dll
+C:\__Jobs\indian\Games.Core\Games.Core\bin\Debug\net8.0\Games.Core.pdb
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.Core.AssemblyInfoInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.Core.AssemblyInfo.cs
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.Core.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.Core.dll
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\refint\Games.Core.dll
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.Core.pdb
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.Core.genruntimeconfig.cache
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\ref\Games.Core.dll
