@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.OriginalCode", "Games.Core\Games.OriginalCode.csproj", "{F34E2E7C-C703-436F-834B-CB3E95715D09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.OriginalCode", "Games.Core\Games.OriginalCode.csproj", "{F34E2E7C-C703-436F-834B-CB3E95715D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Test", "Games.Test\Games.Test.csproj", "{19984194-7EC3-4384-9DA6-5FBB1FD9006F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.Test", "Games.Test\Games.Test.csproj", "{19984194-7EC3-4384-9DA6-5FBB1FD9006F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Task1Refactor", "Games.Task1Refactor\Games.Task1Refactor.csproj", "{FB097E3A-A0C0-4D7A-8D1F-8A43E770FB53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.Task1Refactor", "Games.Task1Refactor\Games.Task1Refactor.csproj", "{FB097E3A-A0C0-4D7A-8D1F-8A43E770FB53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Task2TwoNames", "Games.Task2NameScore\Games.Task2TwoNames.csproj", "{F084B764-5378-4F45-B19F-90E4A9751E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.Task2TwoNames", "Games.Task2NameScore\Games.Task2TwoNames.csproj", "{F084B764-5378-4F45-B19F-90E4A9751E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Task3WinnerScore", "Games.Task3WinnerScore\Games.Task3WinnerScore.csproj", "{1DE0933C-CB75-4873-9068-B7E23F37122B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.Task3WinnerScore", "Games.Task3WinnerScore\Games.Task3WinnerScore.csproj", "{1DE0933C-CB75-4873-9068-B7E23F37122B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Task4VolleyBall", "Games.Task4VolleyBall\Games.Task4VolleyBall.csproj", "{5B278B53-1353-4674-ABB3-C794FEEF4DC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.Task4VolleyBall", "Games.Task4VolleyBall\Games.Task4VolleyBall.csproj", "{5B278B53-1353-4674-ABB3-C794FEEF4DC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Task5TennisSquash", "Games.Task5TennisSquash\Games.Task5TennisSquash.csproj", "{C1310139-AD08-47FA-BC79-4E323179BFB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.Task5TennisSquash", "Games.Task5TennisSquash\Games.Task5TennisSquash.csproj", "{C1310139-AD08-47FA-BC79-4E323179BFB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Task6API", "Games.Task6API\Games.Task6API.csproj", "{F6DF808A-E237-4680-85EE-F28FE9FB45E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.Task6API", "Games.Task6API\Games.Task6API.csproj", "{F6DF808A-E237-4680-85EE-F28FE9FB45E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Helper", "Games.Helper\Games.Helper.csproj", "{3D0D6270-6E6F-42F4-811D-E91139DC358E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{F6DF808A-E237-4680-85EE-F28FE9FB45E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6DF808A-E237-4680-85EE-F28FE9FB45E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6DF808A-E237-4680-85EE-F28FE9FB45E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0D6270-6E6F-42F4-811D-E91139DC358E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0D6270-6E6F-42F4-811D-E91139DC358E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0D6270-6E6F-42F4-811D-E91139DC358E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0D6270-6E6F-42F4-811D-E91139DC358E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

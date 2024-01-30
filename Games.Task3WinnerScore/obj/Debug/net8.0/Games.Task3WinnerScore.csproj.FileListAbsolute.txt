@@ -1,10 +1,15 @@
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\bin\Debug\net8.0\Games.Task3WinnerScore.deps.json
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\bin\Debug\net8.0\Games.Task3WinnerScore.dll
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\bin\Debug\net8.0\Games.Task3WinnerScore.pdb
+C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\bin\Debug\net8.0\Games.Helper.dll
+C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\bin\Debug\net8.0\Games.Helper.pdb
+C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.csproj.AssemblyReference.cache
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.GeneratedMSBuildEditorConfig.editorconfig
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.AssemblyInfoInputs.cache
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.AssemblyInfo.cs
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.sourcelink.json
+C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.csproj.CopyComplete
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.dll
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\refint\Games.Task3WinnerScore.dll
 C:\__Jobs\indian\Games.Core\Games.Task3WinnerScore\obj\Debug\net8.0\Games.Task3WinnerScore.pdb

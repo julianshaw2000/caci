@@ -1,10 +1,15 @@
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\bin\Debug\net8.0\Games.Task1Refactor.deps.json
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\bin\Debug\net8.0\Games.Task1Refactor.dll
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\bin\Debug\net8.0\Games.Task1Refactor.pdb
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\bin\Debug\net8.0\Games.Helper.dll
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\bin\Debug\net8.0\Games.Helper.pdb
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.csproj.AssemblyReference.cache
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.GeneratedMSBuildEditorConfig.editorconfig
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.AssemblyInfoInputs.cache
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.AssemblyInfo.cs
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.sourcelink.json
+C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.csproj.CopyComplete
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.dll
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\refint\Games.Task1Refactor.dll
 C:\__Jobs\indian\Games.Core\Games.Task1Refactor\obj\Debug\net8.0\Games.Task1Refactor.pdb

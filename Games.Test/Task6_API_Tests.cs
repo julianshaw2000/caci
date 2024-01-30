@@ -1,120 +1,93 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
-using Games.Task6API.Controllers;
+using Xunit;
 using Games.Task6API.Data;
-using Microsoft.EntityFrameworkCore; 
-using Microsoft.AspNetCore.Mvc; 
-public class ScoresControllerTests
+using Games.Task5TennisSquash;
+using Games.Task6API.Controllers;
+
+namespace Games.Task6API.Tests
 {
-
-    private readonly Mock<AppDbContext> _mockContext;
-    private readonly Mock<DbSet<ScoreRecord>> _mockSet;
-    private readonly Mock<ScoreService> _mockScoreService;
-    private readonly ScoresController _controller;
-    public ScoresControllerTests()
-{
-    _mockSet = new Mock<DbSet<ScoreRecord>>();
-    _mockContext = new Mock<AppDbContext>();
-    _mockScoreService = new Mock<ScoreService>();
-
-    _mockContext.Setup(m => m.ScoreRecords).Returns(_mockSet.Object);
-    _controller = new ScoresController(_mockContext.Object, _mockScoreService.Object);
-}
-
-
-
-[Fact]
-public async Task GetScoreRecord_ReturnsScoreById()
-{
-    // Arrange
-    var scoreRecordId = Guid.NewGuid();
-    var scoreRecord = new ScoreRecord { Id = scoreRecordId, /* ... other properties ... */ };
-    _mockSet.Setup(m => m.FindAsync(scoreRecordId)).ReturnsAsync(scoreRecord);
-
-    // Act
-    var result = await _controller.GetScoreRecord(scoreRecordId);
-
-    // Assert
-    var actionResult = Assert.IsType<ActionResult<ScoreRecord>>(result);
-    var returnValue = Assert.IsType<ScoreRecord>(actionResult.Value);
-    Assert.Equal(scoreRecordId, returnValue.Id);
-}
-
-
-
-
-
-
-    [Fact]
-    public async Task PostScoreRecord_CreatesNewScoreRecord()
+    public class ScoresControllerTests
     {
-        // Arrange
-        var mockSet = new Mock<DbSet<ScoreRecord>>();
-        var mockContext = new Mock<AppDbContext>();
-        mockContext.Setup(m => m.ScoreRecords).Returns(mockSet.Object);
+        private readonly Mock<IScoreService> _mockScoreService;
+        private readonly ScoresController _controller;
 
-        var mockScoreService = new Mock<ScoreService>(mockContext.Object);
-        var controller = new ScoresController(mockContext.Object, mockScoreService.Object);
-
-        var newScoreRecordDto = new ScoreRecordDto
+        public ScoresControllerTests()
         {
-            // Populate with test data
-        };
+            _mockScoreService = new Mock<IScoreService>();
+            _controller = new ScoresController(_mockScoreService.Object);
+        }
 
-        // Act
-        var result = controller.PostScoreRecord(newScoreRecordDto, SportType.Tennis);
-
-        // Assert
-        mockSet.Verify(m => m.Add(It.IsAny<ScoreRecord>()), Times.Once);
-        mockContext.Verify(m => m.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
-        Assert.IsType<ActionResult<ScoreRecord>>(result);
-    }
-
-
-
-
-
-
-    [Fact]
-    public async Task DeleteScoreRecord_RemovesScoreRecord()
-    {
-        // Arrange
-        var mockSet = new Mock<DbSet<ScoreRecord>>();
-        var mockContext = new Mock<AppDbContext>();
-        mockContext.Setup(m => m.ScoreRecords).Returns(mockSet.Object);
-
-        var mockScoreService = new Mock<ScoreService>(mockContext.Object);
-        var controller = new ScoresController(mockContext.Object, mockScoreService.Object);
-
-        var newScoreRecordDto = new ScoreRecordDto
+        [Fact]
+        public async Task GetScoreRecords_ReturnsAllScores()
         {
-            // Populate with test data
-        };
+            // Arrange
+            var mockScores = new List<ScoreRecord> { /* populate with test data */ };
+            _mockScoreService.Setup(service => service.GetAllScoreRecordsAsync())
+                             .ReturnsAsync(mockScores);
 
-       
-         
-        var Id = Guid.NewGuid();
+            // Act
+            var result = await _controller.GetScoreRecords();
 
-        // Act
-        var result = await controller.DeleteScoreRecord(Id);
+            // Assert
+            var actionResult = Assert.IsType<OkObjectResult>(result.Result);
+            var returnedScores = Assert.IsAssignableFrom<IEnumerable<ScoreRecord>>(actionResult.Value);
+            Assert.Equal(mockScores, returnedScores); 
+        }
 
-        // Assert
-        mockSet.Verify(m => m.Remove(It.IsAny<ScoreRecord>()), Times.Once);
-        mockContext.Verify(m => m.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
-        Assert.IsType<NoContentResult>(result);
+        [Fact]
+        public async Task GetScoreRecord_ReturnsScore_WhenScoreExists()
+        {
+            // Arrange
+            var mockScore = new ScoreRecord { /* populate with test data */ };
+            _mockScoreService.Setup(service => service.GetScoreRecordAsync(It.IsAny<Guid>()))
+                             .ReturnsAsync(mockScore);
+
+            // Act
+            var result = await _controller.GetScoreRecord(Guid.NewGuid());
+
+            // Assert
+            var actionResult = Assert.IsType<OkObjectResult>(result.Result);
+            Assert.Equal(mockScore, actionResult.Value); 
+        }
+
+     //   [Fact(Skip = "Later")]
+        [Fact]
+        public async Task GetScoreRecord_ReturnsNotFound_WhenScoreDoesNotExist()
+        {
+            // Arrange
+            _mockScoreService.Setup(service => service.GetScoreRecordAsync(It.IsAny<Guid>()))
+                             .ReturnsAsync((ScoreRecord)null);
+
+            // Act
+            var result = await _controller.GetScoreRecord(Guid.NewGuid());
+
+            // Assert
+            Assert.IsType<NotFoundResult>(result.Result);
+        }
+
+        [Theory]
+        [InlineData("11111111-1111-1111-1111-111111111111")]
+        [InlineData("22222222-2222-2222-2222-222222222222")]
+        public async Task GetScoreRecord_ReturnsScore_WhenScoreExists2(string guidString)
+        {
+            // Arrange
+            var mockScore = new ScoreRecord { /* populate with test data */ };
+            var guid = Guid.Parse(guidString);
+            _mockScoreService.Setup(service => service.GetScoreRecordAsync(guid))
+                             .ReturnsAsync(mockScore);
+
+            // Act
+            var result = await _controller.GetScoreRecord(guid);
+
+            // Assert
+            var actionResult = Assert.IsType<OkObjectResult>(result.Result);
+            Assert.Equal(mockScore, actionResult.Value);
+        }
 
 
     }
-
-
-
-
-
-
-     
-
-
-
-
-
 }

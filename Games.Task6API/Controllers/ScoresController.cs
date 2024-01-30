@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Games.Task6API.Data;
 using Games.Task5TennisSquash;
 
@@ -14,86 +11,50 @@ namespace Games.Task6API.Controllers
     [ApiController]
     public class ScoresController : ControllerBase
     {
-        private readonly AppDbContext _context;
-        private readonly ScoreService _scoreService;
+        private readonly IScoreService _scoreService;
 
-        public ScoresController(AppDbContext context, ScoreService scoreService)
+        public ScoresController(IScoreService scoreService)
         {
-            _context = context;
             _scoreService = scoreService;
         }
-         
-         
-
 
         // GET: api/ScoreRecords
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ScoreRecord>>> GetScoreRecords()
         {
-            return await _context.ScoreRecords.ToListAsync();
+            var scores = await _scoreService.GetAllScoreRecordsAsync();
+            return Ok(scores);
         }
 
         // GET: api/ScoreRecords/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ScoreRecord>> GetScoreRecord(Guid id)
         {
-            var scoreRecord = await _context.ScoreRecords.FindAsync(id);
-
+            var scoreRecord = await _scoreService.GetScoreRecordAsync(id);
             if (scoreRecord == null)
             {
                 return NotFound();
             }
-
-            return scoreRecord;
+            return Ok(scoreRecord);
         }
 
-       
-
         // POST: api/ScoreRecords
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public   ActionResult<ScoreRecord> PostScoreRecord(ScoreRecordDto scoreRecord, SportType sportType)
+        public ActionResult<ScoreRecord> PostScoreRecord(ScoreRecordDto scoreRecord, SportType sportType)
         {
-            IScoreTracker tracker;
-
-            switch (sportType)
-            {
-                case SportType.Tennis:
-                    tracker = new TennisScoreTracker(scoreRecord.Team1Name, scoreRecord.Team2Name, scoreRecord.ScoreInput);
-                    break;
-                case SportType.Squash:
-                    tracker = new SquashScoreTracker(scoreRecord.Team1Name, scoreRecord.Team2Name, scoreRecord.ScoreInput);
-                    break;
-               
-                default:
-                    tracker = new TennisScoreTracker(scoreRecord.Team1Name, scoreRecord.Team2Name, scoreRecord.ScoreInput);
-                    break;
-            }
-             
-            tracker.ProcessScore();
-            string result = tracker.ResultMessage;
-
-
-
-               _scoreService.EvaluateAndSaveScore(scoreRecord.Team1Name, scoreRecord.Team2Name, scoreRecord.ScoreInput, tracker);
-           
-
-            return Ok( scoreRecord );
+            var result = _scoreService.EvaluateAndSaveScore(scoreRecord, sportType);
+            return Ok(result);
         }
 
         // DELETE: api/ScoreRecords/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteScoreRecord(Guid id)
         {
-            var scoreRecord = await _context.ScoreRecords.FindAsync(id);
-            if (scoreRecord == null)
+            var success = await _scoreService.DeleteScoreRecordAsync(id);
+            if (!success)
             {
                 return NotFound();
             }
-
-            _context.ScoreRecords.Remove(scoreRecord);
-            await _context.SaveChangesAsync();
-
             return NoContent();
         }
 
@@ -101,22 +62,8 @@ namespace Games.Task6API.Controllers
         [HttpDelete("DeleteAllScoreRecord")]
         public async Task<IActionResult> DeleteAllScoreRecord()
         {
-            var scoreRecords =   _context.ScoreRecords.AsEnumerable();
-            if (scoreRecords == null)
-            {
-                return NotFound();
-            }
-
-            _context.ScoreRecords.RemoveRange(scoreRecords);
-
-            await _context.SaveChangesAsync();
-
+            await _scoreService.DeleteAllScoreRecordsAsync();
             return NoContent();
-        }
-
-        private bool ScoreRecordExists(Guid id)
-        {
-            return _context.ScoreRecords.Any(e => e.Id == id);
         }
     }
 }

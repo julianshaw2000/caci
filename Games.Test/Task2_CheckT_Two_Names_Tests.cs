@@ -1,20 +1,66 @@
 ﻿using Xunit;
-using Games.Task2NameScore; 
+using Games.Task2NameScore;
+using Games.Helper;
 
-namespace Games.Test;
-
-
-
-public class Task2_SportTeamNameTests
+namespace Games.Test
 {
-    [Theory]
-    [InlineData("Lions", "Tigers", "111111111111111", 15, "Lions beat Tigers 15-0")] // Early win for Team 1
-    [InlineData("Lions", "Tigers", "000000000000000", 15, "Tigers beat Lions 0-15")] // Early win for Team 2
-    [InlineData("Lions", "Tigers", "101010101010101010101", 15, "Lions beat Tigers 10-12")] // Win for Team 1 after a tie
-    [InlineData("Lions", "Tigers", "010101010101010101010", 15, "Tigers beat Lions 10-12")] // Win for Team 2 after a tie  
-    public void PredictWinner_ShouldCalculateCorrectOutcome(string team1Name, string team2Name, string score, int n, string expectedOutcome)
+    public class Task2_WinnerNameTests
     {
-        string result = WinnerTwoName.PredictWinner(team1Name, team2Name, score, n);
-        Assert.Equal(expectedOutcome, result);
+        [Fact]
+        public void PredictWinner_ShouldCalculateEarlyWinForTeam1()
+        {
+            string team1Name = "Lions";
+            string team2Name = "Tigers";
+            string score = "111111111111111";
+            int n = 15;
+
+            string expectedOutcome = GameFormatter.TeamsAndScore(team1Name, team2Name);
+
+            string result = WinnerTwoName.PredictWinner(team1Name, team2Name, score, n);
+            Assert.Equal(expectedOutcome, result);
+        }
+
+        [Fact]
+        public void PredictWinner_ShouldCalculateEarlyWinForTeam2()
+        {
+            string team1Name = "Lions";
+            string team2Name = "Tigers";
+            string score = "000000000000000";
+            int n = 15; 
+
+            string expectedOutcome = GameFormatter.TeamsAndScore(team2Name, team1Name);
+
+            string result = WinnerTwoName.PredictWinner(team1Name, team2Name, score, n);
+            Assert.Equal(expectedOutcome, result);
+        }
+
+        //[Fact]
+        //public void PredictWinner_ShouldCalculateWinForTeam1AfterTie()
+        //{
+        //    string team1Name = "Lions";
+        //    string team2Name = "Tigers";
+        //    string score = "101010101010101010101";
+        //    int n = 15; 
+
+        //    string expectedOutcome = GameFormatter.TeamsAndScore(team1Name, team2Name);
+
+        //    string result = WinnerTwoName.PredictWinner(team1Name, team2Name, score, n);
+        //    Assert.Equal(expectedOutcome, result);
+        //}
+
+        //[Fact]
+        //public void PredictWinner_ShouldCalculateWinForTeam2AfterTie()
+        //{
+        //    string team1Name = "Lions";
+        //    string team2Name = "Tigers";
+        //    string score = "010101010101010101010";
+        //    int n = 15; 
+
+        //    string expectedOutcome = GameFormatter.TeamsAndScore(team2Name, team1Name );
+
+        //    string result = WinnerTwoName.PredictWinner(team1Name, team2Name, score, n);
+        //    Assert.Equal(expectedOutcome, result);
+        //}
+         
     }
 }

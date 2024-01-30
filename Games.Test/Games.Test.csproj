@@ -31,6 +31,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Games.Core\Games.OriginalCode.csproj" />
+    <ProjectReference Include="..\Games.Helper\Games.Helper.csproj" />
     <ProjectReference Include="..\Games.Task1Refactor\Games.Task1Refactor.csproj" />
     <ProjectReference Include="..\Games.Task2NameScore\Games.Task2TwoNames.csproj" />
     <ProjectReference Include="..\Games.Task3WinnerScore\Games.Task3WinnerScore.csproj" />

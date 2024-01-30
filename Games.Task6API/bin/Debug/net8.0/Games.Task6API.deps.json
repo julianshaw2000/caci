@@ -1738,7 +1738,15 @@
           }
         }
       },
+      "Games.Helper/1.0.0": {
+        "runtime": {
+          "Games.Helper.dll": {}
+        }
+      },
       "Games.Task5TennisSquash/1.0.0": {
+        "dependencies": {
+          "Games.Helper": "1.0.0"
+        },
         "runtime": {
           "Games.Task5TennisSquash.dll": {}
         }
@@ -2765,6 +2773,11 @@
       "sha512": "sha512-bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
+    },
+    "Games.Helper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Games.Task5TennisSquash/1.0.0": {
       "type": "project",

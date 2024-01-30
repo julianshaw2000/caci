@@ -1,36 +1,103 @@
 ﻿using Games.Task5TennisSquash;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
-namespace Games.Task6API.Data;
-public class ScoreService
+namespace Games.Task6API.Data
 {
-    private readonly AppDbContext _dbContext;
-
-    public ScoreService(AppDbContext dbContext)
+    public interface IScoreService
     {
-        _dbContext = dbContext;
+        public Task<IEnumerable<ScoreRecord>> GetAllScoreRecordsAsync();
+        public Task<ScoreRecord> GetScoreRecordAsync(Guid id);
+        public ScoreRecordDto EvaluateAndSaveScore(ScoreRecordDto scoreRecordDto, SportType sportType);
+        public Task<bool> DeleteScoreRecordAsync(Guid id);
+        public Task DeleteAllScoreRecordsAsync();
+
     }
 
-    public Guid EvaluateAndSaveScore(string team1Name, string team2Name, string scoreInput, IScoreTracker tracker)
+    public class ScoreService : IScoreService
     {
-        // Evaluate the score
-        tracker.ProcessScore();
-        var result = tracker.ResultMessage;
+        private readonly AppDbContext _dbContext;
 
-        // Save to database
-        var scoreRecord = new ScoreRecord
+        public ScoreService()
         {
-            Id = Guid.NewGuid(),
-            Team1Name = team1Name,
-            Team2Name = team2Name,
-            ScoreInput = scoreInput,
-            Result = result
-        };
-        _dbContext.ScoreRecords.Add(scoreRecord);
-        _dbContext.SaveChanges();
+            
+        }
+        public ScoreService(AppDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
 
-        return scoreRecord.Id;
+        public async Task<IEnumerable<ScoreRecord>> GetAllScoreRecordsAsync()
+        {
+            return await _dbContext.ScoreRecords.ToListAsync();
+        }
+
+        public async Task<ScoreRecord> GetScoreRecordAsync(Guid id)
+        {
+            return await _dbContext.ScoreRecords.FindAsync(id);
+        }
+
+        public ScoreRecordDto EvaluateAndSaveScore(ScoreRecordDto scoreRecordDto, SportType sportType)
+        {
+            IScoreTracker tracker = CreateTracker(scoreRecordDto, sportType);
+            tracker.ProcessScore();
+
+            var scoreRecord = new ScoreRecord
+            {
+                Id = Guid.NewGuid(),
+                Team1Name = scoreRecordDto.Team1Name,
+                Team2Name = scoreRecordDto.Team2Name,
+                ScoreInput = scoreRecordDto.ScoreInput,
+                Result = tracker.ResultMessage
+            };
+
+            _dbContext.ScoreRecords.Add(scoreRecord);
+            _dbContext.SaveChanges();
+
+            return scoreRecordDto;
+        }
+
+        private IScoreTracker CreateTracker(ScoreRecordDto scoreRecordDto, SportType sportType)
+        {
+
+            switch (sportType)
+            {
+                case SportType.Tennis:
+                    return new TennisScoreTracker(scoreRecordDto.Team1Name, scoreRecordDto.Team2Name, scoreRecordDto.ScoreInput);
+
+                case SportType.Squash:
+                    return new SquashScoreTracker(scoreRecordDto.Team1Name, scoreRecordDto.Team2Name, scoreRecordDto.ScoreInput);
+
+                default:
+                    throw new ArgumentException("Invalid sport type");
+            }
+        
+        }
+           
+
+        
+
+        public async Task<bool> DeleteScoreRecordAsync(Guid id)
+        {
+            var scoreRecord = await _dbContext.ScoreRecords.FindAsync(id);
+            if (scoreRecord == null)
+            {
+                return false;
+            }
+
+            _dbContext.ScoreRecords.Remove(scoreRecord);
+            await _dbContext.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task DeleteAllScoreRecordsAsync()
+        {
+            var allRecords = _dbContext.ScoreRecords;
+            _dbContext.ScoreRecords.RemoveRange(allRecords);
+            await _dbContext.SaveChangesAsync();
+        }
     }
-
-    // Methods for retrieving and deleting scores
 }
-

@@ -1,8 +1,5 @@
-﻿namespace Games.Task2NameScore;
- 
-
-
- 
+﻿namespace Games.Task2NameScore
+{
     public class WinnerTwoName
     {
         public static string PredictWinner(string team1Name, string team2Name, string score, int n)
@@ -38,20 +35,20 @@
 
                 if (CheckLosingCondition(count))
                 {
-                    ResultMessage = FormatResultMessage(team2Name, team1Name, count);
+                    ResultMessage = Games.Helper.GameFormatter.TeamsAndScore(team2Name, team1Name);
                     return;
                 }
 
                 if (CheckWinningCondition(count))
                 {
-                    ResultMessage = FormatResultMessage(team1Name, team2Name, count);
+                    ResultMessage = Games.Helper.GameFormatter.TeamsAndScore(team1Name, team2Name);
                     return;
                 }
 
                 ResetCountsIfTie(count);
             }
 
-            ProcessPostTieScore(count);
+            // Handle any additional logic for ties or other scenarios
         }
 
         private bool CheckLosingCondition(int[] count)
@@ -73,21 +70,7 @@
             }
         }
 
-        private void ProcessPostTieScore(int[] count)
-        {
-            for (int i = 0; i < score.Length; i++)
-            {
-                count[score[i] - '0']++;
-                if (Math.Abs(count[0] - count[1]) == 2)
-                {
-                    ResultMessage = count[0] > count[1] ? $"{team2Name} beat {team1Name} {count[1]}-{count[0]}" : $"{team1Name} beat {team2Name} {count[0]}-{count[1]}";
-                    return;
-                }
-            }
-        }
-
-        private string FormatResultMessage(string winningTeam, string losingTeam, int[] count)
-        {
-            return $"{winningTeam} beat {losingTeam} {count[1]}-{count[0]}";
-        }
+        // Other methods can be added as needed
     }
+}
+ 

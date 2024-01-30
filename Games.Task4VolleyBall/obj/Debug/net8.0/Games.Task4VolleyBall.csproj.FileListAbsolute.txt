@@ -1,10 +1,15 @@
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\bin\Debug\net8.0\Games.Task4VolleyBall.deps.json
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\bin\Debug\net8.0\Games.Task4VolleyBall.dll
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\bin\Debug\net8.0\Games.Task4VolleyBall.pdb
+C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\bin\Debug\net8.0\Games.Helper.dll
+C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\bin\Debug\net8.0\Games.Helper.pdb
+C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.csproj.AssemblyReference.cache
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.GeneratedMSBuildEditorConfig.editorconfig
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.AssemblyInfoInputs.cache
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.AssemblyInfo.cs
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.sourcelink.json
+C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.csproj.CopyComplete
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.dll
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\refint\Games.Task4VolleyBall.dll
 C:\__Jobs\indian\Games.Core\Games.Task4VolleyBall\obj\Debug\net8.0\Games.Task4VolleyBall.pdb

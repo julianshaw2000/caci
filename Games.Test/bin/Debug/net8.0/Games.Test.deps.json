@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Games.Test/1.0.0": {
         "dependencies": {
+          "Games.Helper": "1.0.0",
           "Games.OriginalCode": "1.0.0",
           "Games.Task1Refactor": "1.0.0",
           "Games.Task2TwoNames": "1.0.0",
@@ -2700,32 +2701,52 @@
         }
       },
       "xunit.runner.visualstudio/2.4.5": {},
+      "Games.Helper/1.0.0": {
+        "runtime": {
+          "Games.Helper.dll": {}
+        }
+      },
       "Games.OriginalCode/1.0.0": {
         "runtime": {
           "Games.OriginalCode.dll": {}
         }
       },
       "Games.Task1Refactor/1.0.0": {
+        "dependencies": {
+          "Games.Helper": "1.0.0"
+        },
         "runtime": {
           "Games.Task1Refactor.dll": {}
         }
       },
       "Games.Task2TwoNames/1.0.0": {
+        "dependencies": {
+          "Games.Helper": "1.0.0"
+        },
         "runtime": {
           "Games.Task2TwoNames.dll": {}
         }
       },
       "Games.Task3WinnerScore/1.0.0": {
+        "dependencies": {
+          "Games.Helper": "1.0.0"
+        },
         "runtime": {
           "Games.Task3WinnerScore.dll": {}
         }
       },
       "Games.Task4VolleyBall/1.0.0": {
+        "dependencies": {
+          "Games.Helper": "1.0.0"
+        },
         "runtime": {
           "Games.Task4VolleyBall.dll": {}
         }
       },
       "Games.Task5TennisSquash/1.0.0": {
+        "dependencies": {
+          "Games.Helper": "1.0.0"
+        },
         "runtime": {
           "Games.Task5TennisSquash.dll": {}
         }
@@ -4346,6 +4367,11 @@
       "sha512": "sha512-OwHamvBdUKgqsXfBzWiCW/O98BTx81UKzx2bieIOQI7CZFE5NEQZGi8PBQGIKawDW96xeRffiNf20SjfC0x9hw==",
       "path": "xunit.runner.visualstudio/2.4.5",
       "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+    },
+    "Games.Helper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Games.OriginalCode/1.0.0": {
       "type": "project",

@@ -7,6 +7,7 @@ C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.OriginalCode.Gener
 C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.OriginalCode.AssemblyInfoInputs.cache
 C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.OriginalCode.AssemblyInfo.cs
 C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.OriginalCode.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.OriginalCode.sourcelink.json
 C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.OriginalCode.dll
 C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\refint\Games.OriginalCode.dll
 C:\__Jobs\indian\Games.Core\Games.Core\obj\Debug\net8.0\Games.OriginalCode.pdb

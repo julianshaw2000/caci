@@ -1,4 +1,10 @@
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\CoverletSourceRootsMapping_Games.Test
+C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.csproj.AssemblyReference.cache
+C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.AssemblyInfoInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.AssemblyInfo.cs
+C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.sourcelink.json
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\testhost.dll
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.OriginalCode.deps.json
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.OriginalCode.runtimeconfig.json
@@ -305,6 +311,7 @@ C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\runtimes\win\lib\net7.0\
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Helper.dll
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.OriginalCode.dll
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task1Refactor.dll
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task2TwoNames.dll
@@ -313,17 +320,13 @@ C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task4VolleyBall.dl
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task5TennisSquash.dll
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task6API.dll
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.OriginalCode.pdb
+C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Helper.pdb
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task1Refactor.pdb
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task2TwoNames.pdb
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task3WinnerScore.pdb
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task4VolleyBall.pdb
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task5TennisSquash.pdb
 C:\__Jobs\indian\Games.Core\Games.Test\bin\Debug\net8.0\Games.Task6API.pdb
-C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.csproj.AssemblyReference.cache
-C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.GeneratedMSBuildEditorConfig.editorconfig
-C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.AssemblyInfoInputs.cache
-C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.AssemblyInfo.cs
-C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.csproj.CoreCompileInputs.cache
 C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.csproj.CopyComplete
 C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\Games.Test.dll
 C:\__Jobs\indian\Games.Core\Games.Test\obj\Debug\net8.0\refint\Games.Test.dll

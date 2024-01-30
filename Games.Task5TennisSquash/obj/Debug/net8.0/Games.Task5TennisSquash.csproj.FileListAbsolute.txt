@@ -1,10 +1,15 @@
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\bin\Debug\net8.0\Games.Task5TennisSquash.deps.json
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\bin\Debug\net8.0\Games.Task5TennisSquash.dll
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\bin\Debug\net8.0\Games.Task5TennisSquash.pdb
+C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\bin\Debug\net8.0\Games.Helper.dll
+C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\bin\Debug\net8.0\Games.Helper.pdb
+C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.csproj.AssemblyReference.cache
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.GeneratedMSBuildEditorConfig.editorconfig
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.AssemblyInfoInputs.cache
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.AssemblyInfo.cs
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.csproj.CoreCompileInputs.cache
+C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.sourcelink.json
+C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.csproj.CopyComplete
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.dll
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\refint\Games.Task5TennisSquash.dll
 C:\__Jobs\indian\Games.Core\Games.Task5TennisSquash\obj\Debug\net8.0\Games.Task5TennisSquash.pdb

@@ -1,4 +1,6 @@
-﻿namespace Games.Task1Refactor;
+﻿using Games.Helper;
+
+namespace Games.Task1Refactor;
 
 public class SportRefactor
 {
@@ -33,14 +35,14 @@ internal void ProcessScore()
 
         if (CheckLosingCondition(count))
         {
-            ResultMessage = "Team 1 lost";
+                ResultMessage = GameFormatter.Team1Lost; // "Team 1 lost";
             return;
         }
 
         if (CheckWinningCondition(count))
-        {
-            ResultMessage = "Team 1 won";
-            return;
+        { 
+                ResultMessage = GameFormatter.Team1Won; // "Team 1 Won";
+                return;
         }
 
         ResetCountsIfTie(count);
@@ -74,9 +76,9 @@ private void ProcessPostTieScore(int[] count)
     {
         count[score[i] - '0']++;
         if (Math.Abs(count[0] - count[1]) == 2)
-        {
-            ResultMessage = count[0] > count[1] ? "Team 1 lost" : "Team 1 won";
-            return;
+            {
+                ResultMessage = count[0] > count[1] ? GameFormatter.Team1Lost :GameFormatter.Team1Won;
+                return;
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "teZjEkdpAjXcOLxHaAErOy7oqv7tWlYfHPK0Je4JLEY=",
+  "Hash": "zhVaumrztAGwMdH7n+i7Bzf++7PK/ceI4RvfFUD7gvE=",
   "Source": "Games.Task6API",
   "BasePath": "_content/Games.Task6API",
   "Mode": "Default",
@@ -9,10 +9,10 @@
   "DiscoveryPatterns": [],
   "Assets": [
     {
-      "Identity": "c:\\__Jobs\\indian\\Games.Core\\Games.Task6API\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Games.Task6API.styles.css",
+      "Identity": "C:\\__Jobs\\indian\\Games.Core\\Games.Task6API\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Games.Task6API.styles.css",
       "SourceId": "Games.Task6API",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\__Jobs\\indian\\Games.Core\\Games.Task6API\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\__Jobs\\indian\\Games.Core\\Games.Task6API\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Games.Task6API",
       "RelativePath": "Games.Task6API.styles.css",
       "AssetKind": "All",
@@ -25,7 +25,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\__Jobs\\indian\\Games.Core\\Games.Task6API\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Games.Task6API.styles.css"
+      "OriginalItemSpec": "C:\\__Jobs\\indian\\Games.Core\\Games.Task6API\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Games.Task6API.styles.css"
     },
     {
       "Identity": "C:\\Users\\julia\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
